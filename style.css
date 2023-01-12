@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.NavBar{
+    background-color: black;
+    color: white;
+    border-bottom: 0.5px solid gray;
+    width: 100%;
+    line-height: 80px;
+    height: 80px;
+    font-size: 18px;
+    padding: 0 30px;
+    position: absolute;
+    top:0;
+    left: 0;
+    font-family: 'Sofia Sans', sans-serif;
+}
+.NavBar a{
+    text-decoration: none;
+    color: white;
+}
+.NavBar a.logo{
+    float: left;
+    height: inherit;
+    line-height: inherit;
+    padding: 0 30px;
+    font-size: 40px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: 'Sofia Sans', sans-serif;
+    color: white;
+    font-weight: bold;
+}
+.NavBar ul{
+    float: right;
+    list-style: none;
+    height: inherit;
+    line-height: inherit;
+    padding: 0 50px;
+}
+.NavBar ul li{
+    display: inline-block;
+}
+.NavBar ul li a{
+    display: block;
+    text-align: center;
+    min-width: 120px;
+    padding: 0 30px;
+}
+.NavBar ul li a:hover{
+    background-color: white;
+    color: black;
+    font-weight: bolder;
+}
+body{
+    background-color: black;
+}
+.content{
+    font-family: 'Sofia Sans', sans-serif;
+    color: white;
+    margin-top: 20%;
+    margin-left: 100px;
+}
+h1{
+    font-size: 70px;
+}
+p{
+    margin-top: 10px;
+    font-size: larger;
+    font-family: 'Pacifico', cursive;
+}
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.btns{
+    margin-top: 20px;
+    background: white;
+    cursor: pointer;
+    color: black;
+    padding: 22px 30px;
+    float: left;
+    border: 0;
+    border-radius: 40px;
+    margin-left: 10px;
+    font-weight: bolder;
+    margin-bottom: 40px;
+}
+.btns:hover{
+    background-color: grey;
+}
+img{
+    margin-top: 200px;
+    margin-left: 175px;
+    width: 400px;
+    -webkit-filter: blur(5px); /* Safari 6.0 - 9.0 */
+    filter: blur(5px);
+    animation: vibrate 0.5s;
+    animation-iteration-count: infinite;
+}
+img:hover{
+    filter: grayscale(0);
+    transform: 4s;
+    cursor: pointer;
+    animation-iteration-count: initial;
+}
+@keyframes vibrate {
+    0% { transform: rotate(0deg); }
+    10% { transform: rotate(-1deg); }
+    20% { transform: rotate(1deg); }
+    30% { transform: rotate(0deg); }
+    40% { transform: rotate(1deg); }
+    50% { transform: rotate(-1deg); }
+    60% { transform: rotate(0deg); }
+    70% { transform: rotate(-1deg); }
+    80% { transform: rotate(1deg); }
+    90% { transform: rotate(0deg); }
+    100% { transform: rotate(-1deg); }
+}
+.space{
+    width: 100px;
+    height: 30px;
+}
+footer{
+    width: 90%;
+    height: 50px;
+    display: flex;
+    font-weight: bolder;
+    font-style: normal;
+    font-size: larger;
+    background-color: cadetblue;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Press Start 2P', cursive;
+    border-radius: 20px;
+    border: 5px solid whitesmoke;
+}
+.foot{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
